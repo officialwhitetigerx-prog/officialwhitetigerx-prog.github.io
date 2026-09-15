@@ -1,1 +1,0 @@
-# officialwhitetigerx-prog.github.io
