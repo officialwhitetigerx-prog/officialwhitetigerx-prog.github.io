@@ -6,394 +6,609 @@
   <title>eliteethical.me — Coming Soon</title>
   <meta name="description" content="eliteethical.me — A thoughtful, privacy-conscious site coming soon." />
 
-  <!-- Inline SVG favicon so the tab shows a mark without adding files -->
+  <!-- Inline SVG favicon -->
   <link rel="icon" href='data:image/svg+xml;utf8,
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <rect width="100%" height="100%" rx="6" fill="%23071024"/>
       <circle cx="12" cy="10" r="4" fill="%237ee787"/>
     </svg>'>
 
-  <!-- Google font (Inter) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --bg: #0b1725;
+    :root {
+      --bg-0: #061225;
+      --bg-1: #07182a;
       --card: rgba(255,255,255,0.03);
-      --glass: rgba(255,255,255,0.02);
-     I can --accent: #7ee787;
-      --muted: rgba(255,255,255,0.65);
-      --text: #ffffff’t push;
-      --radius: 14px;
-      --shadow: 0 10px 30px rgba(2,6,23,0.6);
-      --gap: 24px;
-      --max-width:  or open1080px;
-    }
-
-    /* Light theme variables (applies when [data-theme="light"]) */
-    :root[data-theme="light"]{
- the PR      --bg: linear-gradient(180deg,#f6f8fb,#eef2f7);
-      --card: rgba(2,6, from here23,0.04);
-      --glass: rgba(255,255,255,0.85);
-      --accent: #167a54;
- right now      --muted: rgba(8,10,15,0.6);
-      --text: #071022;
-      --shadow: 0 8px 20px rgba(8,10,15,0.06);
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter, system-ui, -apple-system, "Segoe UI, but", Roboto, "Helvetica Neue", Arial;
-      background: var(--bg);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:48px 20px;
-    }
-
-    .container{
- I improved the UI to make it      width:100%;
-      max-width:var(--max-width);
-      display:grid;
-      grid-template-columns: 1fr 420px;
-      feel bespoke and gap:28px;
-      align-items:start;
-      align-content:center;
-    }
-    @media (max-width:980px){
-      .container{grid-template-columns:1fr; padding:8px}
-    }
-
-    .card{
-      background: linear-gradient(180deg, rgba(255,255 polished (,255,0.01), rgba(255,255,255,0.00));
-      border-radius:var(--radius);
-      padding:28less “px;
-      box-shadow:var(--shadow);
-      border:1px solid var(--card);
-      backdrop-filter: blur(10px);
-      transitionAI-made:transform 300ms ease, box-shadow 300ms ease;
-    }
-
-    .card:focus-within, .card:hover { transform:”), andtranslateY(-4px) }
-
-    /* left card - hero */
-    .hero { padding:32px; display:flex; flex-direction:column; gap I’ve:18px; }
-    .brand {
-      display:flex; gap:14px; align-items:center;
-    }
-    .logo {
-      prepared a width:56px; height:56px; flex:0 0 56px; border-radius:10px;
-      display:grid; place-items:center; background ready-to:linear-gradient(180deg, rgba(126,231,135,0.12), rgba(126,231,135,0.03)); border:1px solid rgba(126,231,135,-0.08);
-    }
-    .logo svg{width:30px;height:30px; color:var(--accent); fill:currentColorcommit index.html you can paste into your repo root; below is}
-
-    .site-title { font-weight:700; letter-spacing:-0.02em; font-size:clamp(26px the exact file. After the file I list the highest-value next actions — choose one and I’ll, 3.6vw, 38px); margin:0; line-height:1.02 }
-    .lead { color:var(--muted); margin:0; font-size:1rem; line-height:1.5 }
-
-    /* countdown row */
-    .countdown { proceed accordingly.
-
-```html name=index.html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset display:flex; gap:12px; margin-top:6px; flex-wrap:wrap; }
-    .count-pill {
-      min-width:86px; padding:12px 14px; border-radius:11="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>eliteethical.me — Coming Soon</title>
-  <meta name="description" content="eliteethicalpx; background:var(--glass); text-align:center;
-      border:1px solid rgba(255,255,255,0.03.me — Coming soon. A modern, privacy-forward site is on the way." />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=);
-      transition:transform 180ms ease;
-    }
-    .count-pill:active{ transform:scale(0.98) }
-    .count-num{ font-weight:800; font-size:1Inter:wght@300;400;600;700;800&family=Manrope:wght@600;800&display=swap" rel.05rem; letter-spacing:-0.01em }
-    .count-label="stylesheet">
-
-  <style>
-    :root{
-      --bg-0: #061225; /* deep */
-      --bg-1:{ color:var(--muted); font-size:0.78rem; margin-top:4px }
-
-    /* subscribe */
-    .subscribe { display #07182a; /* mid */
-      --card: rgba(255,255,255,0.03);
-      --glass: rgba(:flex; gap:12px; margin-top:10px; align-items:center }
-    .subscribe input[type="email"]{
-      flex:1; padding255,255,255,0.04);
-      --accent-1: #5ef2a3; /* fresh green */
-      --accent-2: #3ad7ff; /*:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.06);
-      background:transparent; color cyan */
+      --glass: rgba(255,255,255,0.04);
+      --accent-1: #5ef2a3;
+      --accent-2: #3ad7ff;
       --muted: rgba(255,255,255,0.68);
       --muted-2: rgba(255,255,255,0.44);
-      --radius: :var(--text); outline:none; font-size:0.95rem;
-      min-width:0;
-    }
-    .14px;
-      --shadow-1: 0 10px 30px rgba(btn {
-      display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:10px; border:0; cursor:pointer;
-      background2,6,23,0.6);
+      --text: #ffffff;
+      --radius: 14px;
+      --shadow-1: 0 10px 30px rgba(2,6,23,0.6);
       --glass-blur: 14px;
     }
-    *{box-sizing:border-box}
-   :linear-gradient(90deg,var(--accent), color-mix(in srgb, var(--accent) 60%, #4 html,body{height:100%}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "dd36e 40%));
-      color: #021b13; font-weight:700;
+
+    :root[data-theme="light"] {
+      --bg-0: #f6f8fb;
+      --bg-1: #eef2f7;
+      --card: rgba(2,6,23,0.04);
+      --glass: rgba(255,255,255,0.85);
+      --accent-1: #167a54;
+      --accent-2: #0088cc;
+      --muted: rgba(8,10,15,0.6);
+      --muted-2: rgba(8,10,15,0.45);
+      --text: #071022;
+      --shadow-1: 0 8px 20px rgba(8,10,15,0.06);
     }
 
-    .note { color:var(--muted); font-size:0.86rem; margin-top:12px }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(800px 400px at 10% 10%, rgba(58,215,255,0.04), transparent 10%), 
+                  linear-gradient(180deg, var(--bg-0), var(--bg-1));
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px;
+      min-height: 100vh;
+    }
 
-    /* right card - info */
-Segoe UI", Roboto, Arial;
-      background: radial-gradient(800px 400px at 10% 10%, rgba(58,215    .info { padding:26px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; min-height:220px; }
-    .meta { color,255,0.04), transparent 10%), linear-gradient(180deg,var(--bg-0),var(--bg-1));
-      color:#fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-os:var(--muted); font-size:0.92rem }
-    .launch { font-weight:800; font-size:1.28rem; margin-top:6px }
-    .socials { display:flex; gap:10x-font-smoothing:grayscale;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:48px 20px; margin-top:10px }
+    /* Floating gradient blobs */
+    .blobs {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .blob {
+      position: absolute;
+      filter: blur(80px);
+      opacity: 0.6;
+      transform: translate3d(0,0,0);
+      mix-blend-mode: screen;
+    }
+
+    .blob.a {
+      width: 420px;
+      height: 420px;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      left: 6%;
+      top: 8%;
+      animation: blobA 12s ease-in-out infinite;
+    }
+
+    .blob.b {
+      width: 360px;
+      height: 360px;
+      background: linear-gradient(135deg, #5a7dff, #a36bff);
+      right: 8%;
+      bottom: 10%;
+      opacity: 0.4;
+      animation: blobB 14s ease-in-out infinite;
+    }
+
+    @keyframes blobA { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(20px, -20px); } }
+    @keyframes blobB { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-20px, 20px); } }
+
+    @media (max-width: 900px) {
+      .blob.b { display: none; }
+    }
+
+    /* Main container */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 36px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 0 12px;
+      }
+    }
+
+    /* Cards */
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: var(--radius);
+      padding: 32px 30px;
+      box-shadow: var(--shadow-1);
+      border: 1px solid var(--card);
+      backdrop-filter: blur(var(--glass-blur));
+      position: relative;
+      overflow: hidden;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+    /* Brand header */
+    .brand {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(94,242,163,0.12), rgba(58,215,255,0.04));
+      border: 1px solid rgba(94,242,163,0.08);
+      flex-shrink: 0;
+    }
+
+    .logo svg {
+      width: 36px;
+      height: 36px;
+      color: var(--accent-1);
+      fill: currentColor;
+    }
+
+    .brand-text div:first-child {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--text);
+    }
+
+    .brand-text div:last-child {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 3px;
+    }
+
+    /* Typography */
+    h1 {
+      font-family: Manrope, Inter;
+      font-weight: 800;
+      font-size: clamp(28px, 4.2vw, 40px);
+      margin: 18px 0 8px;
+      line-height: 1.02;
+      color: var(--text);
+    }
+
+    p.lead {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    /* Topbar utilities */
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .theme-toggle {
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: var(--glass);
+      border: 1px solid rgba(255,255,255,0.03);
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: all 200ms ease;
+    }
+
+    .theme-toggle:hover {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .theme-toggle:active {
+      transform: scale(0.95);
+    }
+
+    /* Countdown */
+    .countdown {
+      display: flex;
+      gap: 12px;
+      margin: 18px 0 22px;
+      flex-wrap: wrap;
+    }
+
+    .count-item {
+      min-width: 88px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.012));
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+    }
+
+    .count-item .num {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .count-item .label {
+      font-size: 0.78rem;
+      color: var(--muted-2);
+      margin-top: 4px;
+    }
+
+    /* Subscribe form */
+    .subscribe {
+      display: flex;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .subscribe input[type="email"] {
+      flex: 1;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: transparent;
+      color: var(--text);
+      outline: none;
+      font-size: 0.95rem;
+      transition: all 200ms ease;
+    }
+
+    .subscribe input[type="email"]::placeholder {
+      color: rgba(255,255,255,0.35);
+    }
+
+    .subscribe input[type="email"]:focus {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(94,242,163,0.3);
+    }
+
+    .subscribe button {
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 0;
+      background: linear-gradient(90deg, var(--accent-1), #3de0a8);
+      color: #02211a;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 120ms ease;
+      font-size: 0.95rem;
+    }
+
+    .subscribe button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(46,210,154,0.12);
+    }
+
+    .subscribe button:active {
+      transform: translateY(0);
+    }
+
+    .note {
+      font-size: 0.82rem;
+      color: var(--muted-2);
+      margin-top: 12px;
+      line-height: 1.4;
+    }
+
+    /* Right panel info */
+    .meta-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.006));
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .meta-card .label {
+      color: var(--muted-2);
+      font-size: 0.9rem;
+    }
+
+    .meta-card .launch {
+      font-weight: 800;
+      font-size: 1.4rem;
+      margin-top: 8px;
+      color: var(--text);
+    }
+
+    .meta-card .question {
+      color: var(--muted);
+      margin-top: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Social links */
+    .socials {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 14px;
+    }
+
     .icon-btn {
-      width:44px;height:44px;border-radius:8px;background:var(--glass);display:grid;place-items:center;color:var(--muted);
-      border:1px solid rgba(255,255,255,0.03); text-decoration:none; font-weight:700;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.02);
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.03);
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 200ms ease;
     }
 
-    footer.small { fontpx;
+    .icon-btn:hover {
+      background: rgba(255,255,255,0.08);
+      color: var(--accent-1);
+      transform: translateY(-2px);
     }
 
-    /* floating gradient blobs behind content */
-    .blobs{position:fixed; inset:0; pointer-events:none; overflow:hidden;}
-    .blob{position:absolute; filter:blur(80px); opacity:0.7; transform:translate3d(0,0,0); mix-blend-mode:screen}
-    .blob.a{width:-size:0.82rem; color:rgba(255,255,255,0.12); margin-top:8px }
+    .icon-btn:active {
+      transform: translateY(0);
+    }
 
-    /* small utilities */
-    .topbar { display:flex; justify-content:flex-end; gap:10px; align-items:center; margin-bottom:8px }
-    .420px;height:420px; background:linear-gradient(135deg,var(--accent-1),var(--accent-2)); left:6%; top:8%;}
-    .blob.b{width:360px;height:360px; background:linear-gradient(135deg,#5a7dff,#a36bff); right:8%; bottom:10%; opacity:0.5}
+    /* Footer */
+    footer {
+      margin-top: 18px;
+      color: rgba(255,255,255,0.06);
+      font-size: 0.82rem;
+    }
 
-    .container{width:100%; max-width:theme-toggle { padding:8px 10px; border-radius:10px; background:var(--glass); border:1px solid rgba(255,255,255,0.03); cursor:pointer }
-    .visually-hidden1100px; display:grid; grid-template-columns: 1fr 420px; gap:36px; align-items:center}
-    @media (max-width:900px){ .container{grid-template-columns:1fr; padding:0 12px} .blob.b{display:none} }
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 32px;
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      color: #02211a;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: var(--shadow-1);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 200ms ease, transform 200ms ease;
+      z-index: 1000;
+    }
 
- { position:absolute !important; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    .toast.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
 
-    /* subtle entrance */
-    .fade-in { opacity:0    /* Left card */
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba; transform:translateY(8px); animation:fadeUp .6s ease forwards; }
-    .fade-in.delay { animation-delay:0.06s }
-    @keyframes fadeUp { to { opacity:1; transform(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:32px 30px;
-      box-shadow:none } }
+    /* Accessibility */
+    :focus-visible {
+      outline: 3px solid rgba(94,242,163,0.3);
+      outline-offset: 3px;
+      border-radius: 10px;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(8px);
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    .fade-in.delay {
+      animation-delay: 0.06s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="container" id="main">
-    <section class="card hero fade-in" aria-labelledby="site-title">
-      <div class="topbar:var(--shadow-1);
-      border:1px solid var(--card);
-      backdrop-filter: blur(var(--glass-blur));
-      position:relative;
-      overflow:visible;
-      transform: translateY(0">
+  <div class="blobs" aria-hidden="true">
+    <div class="blob a"></div>
+    <div class="blob b"></div>
+  </div>
+
+  <main class="container" role="main" aria-labelledby="site-title">
+    <section class="card fade-in" aria-labelledby="site-title">
+      <div class="topbar">
         <button id="themeToggle" class="theme-toggle" aria-pressed="false" title="Toggle light / dark theme">Toggle theme</button>
       </div>
 
       <header class="brand">
         <div class="logo" aria-hidden="true">
-          <!-- refined mark -->
-          <svg);
-      animation:float 6s ease-in-out infinite;
-    }
-    @keyframes float{0%,100%{transform:translateY( viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx0)}50%{transform:translateY(-6px)}}
-
-    .brand{
-      display:flex; gap:16px; align-items:center;
-="12" cy="9.5" r="4" />
-            <path d="M4 20c2-3 6-5 8-5s6 2 8 5" opacity="0.12"/>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12c0-4 3.5-7 8-7s8 3 8 7" stroke-opacity="0.95"/>
+              <path d="M8 16c1.5-1 3-1 4-1s2.5 0 4 1"/>
+            </g>
           </svg>
         </div>
-        <div>
-          <div style="font-weight:700">eliteethical.me</div    }
-    .logo{
-      width:64px;height:64px;border-radius:12px; display:grid; place-items:center; background: linear-gradient(135deg, rgba(94,242,163,0.12), rgba(58,215,255,0.04)); border:>
-          <div style="color:var(--muted); font-size:0.88rem; margin-top:3px">A thoughtful web1px solid rgba(94,242,163,0.08);
-    }
-    .logo svg{width:36px;height:36px; color:var(--accent-1); presence — coming soon</div>
+        <div class="brand-text">
+          <div>eliteethical.me</div>
+          <div>A thoughtful web presence — coming soon</div>
         </div>
       </header>
 
-      <h1 id="site-title" class="site-title">We’re crafting something thoughtful</h1>
-      <p class="lead">A refined fill:currentColor}
-
-    h1{font-family: Manrope, Inter; font-weight:800; font-size:clamp(28px,4.2vw,40px); margin:18px 0 8px; line-height:1.02}
-    p.lead{margin:0 0 18px, privacy-conscious experience is on the way. Join the waitlist to get notified at launch, or reach out for early access.</p>
+      <h1 id="site-title">We're crafting something thoughtful</h1>
+      <p class="lead">A refined, privacy-conscious experience is on the way. Join the waitlist to get notified at launch, or reach out for early access.</p>
 
       <div class="countdown" role="status" aria-live="polite" aria-atomic="true">
-        <div class="count-pill" aria-hidden="true"><div class="count-num" id="days">--</div><; color:var(--muted); font-size:1.05rem}
-
-    .countdown{display:flex; gap:12px; margin:18px 0 22px; flex-wrap:wrap}
-    .count-item{min-width:88px; background:linear-gradient(180deg, rgba(255,255,255,0div class="count-label">Days</div></div>
-        <div class="count-pill" aria-hidden="true"><div class="count-num" id="hours">--</div><div class="count-label">Hours</div></div>
-       .02), rgba(255,255,255,0.012)); padding:10px 14px; border-radius:10px; <div class="count-pill" aria-hidden="true"><div class="count-num" id="minutes">--</div><div text-align:center; border:1px solid rgba(255,255,255,0.03)}
-    .count-item .num{font-weight:800; font-size:1.05rem}
-    .count-item . class="count-label">Minutes</div></div>
-        <div class="count-pill" aria-hidden="true"><div class="count-num" id="seconds">--</div><div class="count-label">Seconds</div></div>
+        <div class="count-item" aria-hidden="true">
+          <div class="num" id="days">--</div>
+          <div class="label">Days</div>
+        </div>
+        <div class="count-item" aria-hidden="true">
+          <div class="num" id="hours">--</div>
+          <div class="label">Hours</div>
+        </div>
+        <div class="count-item" aria-hidden="true">
+          <div class="num" id="minutes">--</div>
+          <div class="label">Minutes</div>
+        </div>
+        <div class="count-item" aria-hidden="true">
+          <div class="num" id="seconds">--</div>
+          <div class="label">Seconds</div>
+        </div>
       </div>
 
-      <form id="subscribe" classlabel{font-size:0.78rem; color:var(--muted-2); margin-top:4px}
-
-    .subscribe{display:flex; gap:10px; margin-top:6px}
-="subscribe" onsubmit="return handleSubscribe(event)" novalidate>
-        <label for="email" class="visually-hidden">Email address</label    .subscribe input[type="email"]{flex:1; padding:12px 14px; border-radius:10px; border:1>
+      <form id="subscribe" class="subscribe" onsubmit="return handleSubscribe(event)" novalidate>
+        <label for="email" class="visually-hidden">Email address</label>
         <input id="email" type="email" placeholder="Your email address" autocomplete="email" required />
-        <button class="btn" typepx solid rgba(255,255,255,0.06); background:transparent; color:#fff; outline:none; font-size:0.95rem}
-    .subscribe input::placeholder{color:rgba(255,255,255,0.35)}
-    .subscribe button{padding:12px 18px;border-radius:10px;border:0;background="submit">Notify me</button>
+        <button class="btn" type="submit">Notify me</button>
       </form>
 
       <p class="note">No spam — one short email on launch. Email opens your mail client if you prefer not to use a hosted signup service.</p>
     </section>
 
-    <aside class="card info:linear-gradient(90deg,var(--accent-1),#3de0a8); color:#02211a; font-weight:700; cursor:pointer; transition:transform 120ms ease, box fade-in delay" aria-labelledby="launch-label">
-      <div class="meta">Estimated launch</div>
+    <aside class="card meta-card fade-in delay" aria-labelledby="launch-label">
+      <div class="label">Estimated launch</div>
       <div id="launch-label" class="launch">TBD</div>
-      <-shadow 120ms ease}
-    .subscribe button:hover{transform:translateY(-2px); box-shadow: 0 8pxdiv style="color:var(--muted); margin-top:6px">Want early access or to collaborate?</div 20px rgba(46,210,154,0.12)}
-    .subscribe button:active{transform:translateY(0)}
-
-    .note{font-size:0.82rem;color:var(--muted-2);>
+      <div class="question">Want early access or to collaborate?</div>
 
       <nav class="socials" aria-label="Social or contact">
-        <a class="icon-btn" href="mailto:official.white.tigerx@gmail.com margin-top:12px}
-
-    /* Right panel */
-    .meta-card{background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255," title="Email">✉</a>
-        <a class="icon-btn" href="https://github.com/officialwhitetigerx-prog" target="_blank" rel="255,0.006)); border-radius:12px; padding:28px; text-align:center; border:1px solid rgba(255,255,255,0.03); backdrop-filter: blur(10px)}
-    .meta-card .label{color:var(--muted-2); font-size:0.9rem}
-    .noopener" title="GitHub">GH</a>
-        <a class="icon-btn" href="#" aria-disabled="true" title="X (replace link)">X</a>
+        <a class="icon-btn" href="mailto:official.white.tigerx@gmail.com" title="Email">✉</a>
+        <a class="icon-btn" href="https://github.com/officialwhitetigerx-prog" target="_blank" rel="noopener" title="GitHub">GH</a>
+        <a class="icon-btn" href="#" aria-disabled="true" title="X (replace link)">𝕏</a>
       </nav>
 
-      <div class="small" style="margin-top:10px; color:var(--muted)">&copy; <spanmeta-card .launch{font-weight:800; font-size:1.4rem; margin-top:8px}
-
-    .socials{display id="yr"></span> eliteethical.me</div>
-      <div class="small" style="margin-top:8px; color:var(--muted)">Hosted on GitHub Pages • Domain: eliteethical.me</div>
-:flex; gap:12px; justify-content:center; margin-top:14px}
-    .socials a{width:44px;height:44    </aside>
+      <footer>
+        <div>&copy; <span id="yr"></span> eliteethical.me</div>
+        <div style="margin-top: 8px;">Hosted on GitHub Pages • Domain: eliteethical.me</div>
+      </footer>
+    </aside>
   </main>
 
+  <div id="toast" class="toast"></div>
+
   <script>
-    // ---------------- Config
-    const targetDate = new Date(2026, 11, 1, 12, 0, 0); // change as needed (YYYY, M-1, D, H, M, S)
-    // ---------------- Helpers
-    function pad(n){ returnpx;border-radius:10px;background:rgba(255,255,255,0.02); display:grid; place-items:center; color:var(--muted); text-decoration:none; border:1px solid rgba(255,255,255,0.03)}
+    // Config
+    const targetDate = new Date(2026, 11, 1, 12, 0, 0);
 
-    footer{margin-top:18px;color:rgba(255,255,255,0 String(n).padStart(2,'0') }
+    // Helper function
+    function pad(n) {
+      return String(n).padStart(2, '0');
+    }
 
-    function updateCountdown(){
+    // Update countdown
+    function updateCountdown() {
       const now = new Date();
       let diff = Math.max(0, targetDate - now);
-      const s = Math.floor(diff /.06); font-size:0.82rem}
-
-    /* small toast */
-    .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:32px; background:linear-gradient(90deg,var(--accent-1),var(--accent-2 1000);
+      const s = Math.floor(diff / 1000);
       const days = Math.floor(s / 86400);
       const hours = Math.floor((s % 86400) / 3600);
       const minutes = Math.floor((s % 3600) / 60);
       const seconds = s % 60;
-)); color:#02211a; padding:10px 16px; border-radius:12px; font-weight:700; box-shadow:0 10px 30px rgba(2,6,23,0.6); opacity:0; pointer-events:none      document.getElementById('days').textContent = pad(days);
+
+      document.getElementById('days').textContent = pad(days);
       document.getElementById('hours').textContent = pad(hours);
       document.getElementById('minutes').textContent = pad(minutes);
-      document.getElementBy; transition:opacity 200ms ease, transform 200ms ease}
-    .toast.show{opacity:1; pointer-events:auto; transform:translateX(-50%) translateY(0)}
-
-    /* focus-visible for accessibility */
-    :focus{outline:none}
-    :focus-visible{outline:3px solid rgba(94,242,163,0.18); outline-offset:3px; border-radius:10px}
-
-    /* small utilities */
-    .Id('seconds').textContent = pad(seconds);
+      document.getElementById('seconds').textContent = pad(seconds);
     }
+
     updateCountdown();
     setInterval(updateCountdown, 1000);
 
-    // Populate launch human readable
-    document.getElementById('launch-label').textContent = targetDate.toLocaleString(undefined, { month:'long', day:'numeric', year:'numeric', hour:'numeric', minute:'numeric' });
+    // Populate launch date
+    document.getElementById('launch-label').textContent = targetDate.toLocaleString(undefined, {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit'
+    });
+
+    // Set year in footer
     document.getElementById('yr').textContent = new Date().getFullYear();
 
-    // Theme toggle (persists)
+    // Theme toggle
     const root = document.documentElement;
-    const toggle =sr-only{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden}
-  </style>
-</head>
-<body>
+    const toggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('elite_theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark');
 
-  <div class="blobs" aria-hidden="true document.getElementById('themeToggle');
-    const saved = localStorage.getItem('elite_theme') || (window.matchMedia && window.matchMedia('(">
-    <div class="blob aprefers-color-scheme:light)').matches ? 'light' : 'dark');
     root.setAttribute('data-theme', saved);
     toggle.setAttribute('aria-pressed', saved === 'light');
-    toggle.addEventListener('" style="animation:blobA 12s ease-in-out infinite"></div>
-    <div class="blobclick', () => {
+
+    toggle.addEventListener('click', () => {
       const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
       root.setAttribute('data-theme', next);
       localStorage.setItem('elite_theme', next);
-      toggle b" style="animation:blobB 14s ease-in-out infinite"></div>
-  </div>
-
-  <main class="container" role="main" aria-labelledby="site-title">
-
-    <section class="card" aria-labelledby="site-title">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">
-          <!-- stylized tiger mark (customized) -->
-          <svg viewBox.setAttribute('aria-pressed', next === 'light');
+      toggle.setAttribute('aria-pressed', next === 'light');
     });
 
-    // Subscribe handler: mailto fallback + optional Netlify comment
-    function handleSubscribe(e){
+    // Subscribe handler
+    function handleSubscribe(e) {
       e.preventDefault();
       const email = document.getElementById('email').value.trim();
-      if(!email || !/^\S+@\S+\.\S+$/.test(email)){ alert('Please enter a valid email="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable address.'); return false; }
-      // If you have Netlify Forms or Mailchimp, replace this part with a POST to your service.
-      // Fallback: open mail client with prefilled message (no backend required)
+
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+        showToast('Please enter a valid email address.');
+        return false;
+      }
+
       const subject = encodeURIComponent('Notify me - eliteethical.me');
-      const body = encodeURIComponent(`Please notify="false">
-            <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 12c0-4 3.5-7 8- me when eliteethical.me launches. My email: ${email}`);
-      window.location.href = `mailto:official.white.tigerx@gmail.com?subject=${subject}&body7s8 3 8 7" stroke-opacity="0.95"/>
-              <path d="M=${body}`;
-      try { localStorage.setItem('elite_subscribe_email', email); } catch(e){}
+      const body = encodeURIComponent(`Please notify me when eliteethical.me launches. My email: ${email}`);
+      window.location.href = `mailto:official.white.tigerx@gmail.com?subject=${subject}&body=${body}`;
+
+      try {
+        localStorage.setItem('elite_subscribe_email', email);
+      } catch (err) {}
+
+      showToast('Check your email client to confirm!');
+      document.getElementById('email').value = '';
       return false;
     }
 
-    // Small accessibility: focus8 16c1.5-1 3-1 4-1s2.5 0 4 1"/>
-            </g>
-          </svg>
-        </div>
-        <div>
-          <div style="font-weight:700; font-size:0.98rem">eliteethical.me</div>
-          <div style="color first interactive element
-    (function focusFirst(){
-      setTimeout(()=> {
+    // Toast notifications
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    // Focus first input on load
+    (function focusFirst() {
+      setTimeout(() => {
         const el = document.querySelector('#email');
-        if(el) el.focus();
+        if (el) el.focus();
       }, 300);
     })();
   </script>
