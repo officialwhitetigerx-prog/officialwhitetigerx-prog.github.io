@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>eliteethical.me — Coming Soon</title>
+  <meta name="description" content="eliteethical.me — Coming soon. A modern, privacy-forward site is on the way." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg1: #0f172a;
+      --bg2: #071024;
+      --accent: #7ee787;
+      --muted: rgba(255,255,255,0.6);
+      --glass: rgba(255,255,255,0.04);
+      --card-blur: 12px;
+    }
+    *{box-sizing: border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(126,231,135,0.06), transparent 10%),
+                  linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:980px;
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:28px;
+      align-items:center;
+    }
+
+    @media (max-width:880px){
+      .wrap{grid-template-columns:1fr; padding:18px}
+    }
+
+    .left{
+      padding:28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      backdrop-filter: blur(var(--card-blur));
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+    .logo {
+      width:64px;
+      height:64px;
+      flex:0 0 64px;
+      display:grid;
+      place-items:center;
+      background: linear-gradient(135deg, rgba(126,231,135,0.12), rgba(126,231,135,0.03));
+      border-radius:12px;
+      border:1px solid rgba(126,231,135,0.12);
+    }
+    .logo svg{width:36px;height:36px; display:block; color:var(--accent); fill:currentColor}
+
+    h1{margin:18px 0 8px; font-size:clamp(28px,3.5vw,36px); letter-spacing:-0.02em}
+    p.lead{margin:0 0 18px; color:var(--muted); line-height:1.5; font-size:1.05rem}
+
+    .countdown{
+      display:flex;
+      gap:12px;
+      margin:18px 0 22px;
+      flex-wrap:wrap;
+    }
+    .count-item{
+      min-width:82px;
+      background:var(--glass);
+      padding:12px 14px;
+      border-radius:10px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .count-item .num{font-weight:700; font-size:1.15rem}
+    .count-item .label{font-size:0.78rem; color:var(--muted); margin-top:4px}
+
+    .subscribe{
+      display:flex;
+      gap:8px;
+      margin-top:8px;
+    }
+    .subscribe input[type="email"]{
+      flex:1;
+      padding:12px 14px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.06);
+      background:transparent;
+      color:#fff;
+      outline:none;
+      font-size:0.95rem;
+    }
+    .subscribe button{
+      padding:12px 16px;
+      border-radius:10px;
+      border:0;
+      background:linear-gradient(90deg,var(--accent),#4dd36e);
+      color:#02211a;
+      font-weight:700;
+      cursor:pointer;
+      font-size:0.95rem;
+    }
+
+    .right{
+      padding:28px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      align-items:center;
+      justify-content:center;
+      border-radius:14px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      backdrop-filter: blur(var(--card-blur));
+      border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 6px 30px rgba(2,6,23,0.45);
+    }
+
+    .meta{color:var(--muted); font-size:0.95rem}
+    .socials{display:flex; gap:12px; margin-top:8px}
+    .socials a{display:inline-grid; place-items:center; width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.02); color:var(--muted); text-decoration:none; border:1px solid rgba(255,255,255,0.03)}
+    footer{margin-top:14px; color:rgba(255,255,255,0.06); font-size:0.82rem}
+    .note{font-size:0.82rem; color:var(--muted); margin-top:10px}
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="site-title">
+    <section class="left" aria-hidden="false">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- Minimal tiger mark -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2 2 6.477 2 12z" />
+          </svg>
+        </div>
+        <div>
+          <div style="font-weight:700; font-size:0.98rem">eliteethical.me</div>
+          <div style="color:var(--muted); font-size:0.85rem; margin-top:2px">A thoughtful web presence — coming soon</div>
+        </div>
+      </div>
+
+      <h1 id="site-title">We're building something thoughtful</h1>
+      <p class="lead">A refined, privacy-conscious site is being crafted. Sign up to be notified when we launch, or check back later for the full experience.</p>
+
+      <div class="countdown" aria-live="polite" aria-atomic="true">
+        <div class="count-item"><div class="num" id="days">--</div><div class="label">Days</div></div>
+        <div class="count-item"><div class="num" id="hours">--</div><div class="label">Hours</div></div>
+        <div class="count-item"><div class="num" id="minutes">--</div><div class="label">Minutes</div></div>
+        <div class="count-item"><div class="num" id="seconds">--</div><div class="label">Seconds</div></div>
+      </div>
+
+      <form id="subscribeForm" class="subscribe" onsubmit="return handleSubscribe(event)" novalidate>
+        <input id="email" type="email" placeholder="Your email address" aria-label="Email address" required />
+        <button type="submit">Notify me</button>
+      </form>
+
+      <p class="note">No spam. You can unsubscribe at any time. Email opens your mail client so I can capture interest without a backend.</p>
+    </section>
+
+    <aside class="right" aria-label="Details and links">
+      <div class="meta">Estimated launch</div>
+      <div style="font-weight:800; font-size:1.6rem" id="launchDateReadable">TBD</div>
+
+      <div class="meta">Want early access or a collab?</div>
+      <div class="socials" role="navigation" aria-label="Social links">
+        <a href="mailto:official.white.tigerx@gmail.com" title="Email">✉️</a>
+        <a href="https://github.com/officialwhitetigerx-prog" title="GitHub" target="_blank" rel="noopener">GH</a>
+        <a href="#" title="Twitter (replace link)" aria-disabled="true">X</a>
+      </div>
+
+      <footer>
+        <div>&copy; <span id="yr"></span> eliteethical.me</div>
+        <div style="margin-top:8px; font-size:0.82rem; color:var(--muted)">Hosted on GitHub Pages • Domain: eliteethical.me</div>
+      </footer>
+    </aside>
+  </main>
+
+  <script>
+    // === CONFIGURE THESE ===
+    // Set the target launch date below (YYYY, M-1, D, H, M, S)
+    const targetDate = new Date(2026, 11, 1, 12, 0, 0); // Dec 1, 2026 12:00 local time
+    // ========================
+
+    // Populate readable date
+    document.getElementById('launchDateReadable').textContent = targetDate.toLocaleString(undefined, {
+      month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric'
+    });
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    function updateCountdown(){
+      const now = new Date();
+      let diff = Math.max(0, targetDate - now);
+      const s = Math.floor(diff / 1000);
+      const days = Math.floor(s / 86400);
+      const hours = Math.floor((s % 86400) / 3600);
+      const minutes = Math.floor((s % 3600) / 60);
+      const seconds = s % 60;
+      document.getElementById('days').textContent = String(days).padStart(2,'0');
+      document.getElementById('hours').textContent = String(hours).padStart(2,'0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2,'0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2,'0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    function handleSubscribe(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      if(!email || !/^\S+@\S+\.\S+$/.test(email)){
+        alert('Please enter a valid email address.');
+        return false;
+      }
+      // Open user's mail client with prefilled email to avoid server-side integration
+      const subject = encodeURIComponent('Notify me - eliteethical.me');
+      const body = encodeURIComponent('Please notify me when the site launches. My email: ' + email);
+      window.location.href = `mailto:official.white.tigerx@gmail.com?subject=${subject}&body=${body}`;
+      // Optionally store in localStorage as a small UX improvement
+      try{ localStorage.setItem('eliteethical_subscribed', email); } catch(e){}
+      return false;
+    }
+  </script>
+</body>
+</html>
